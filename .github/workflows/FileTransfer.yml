@@ -16,7 +16,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v3
         with:
-          python-version: '3.11'  # Replace 'x' with the desired Python version, e.g., '3.8'
+          python-version: '3.11.4'  
 
       - name: Run Python script
         run: D:\Python\OOPS\File_Transfer.py
