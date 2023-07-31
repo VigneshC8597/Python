@@ -19,5 +19,5 @@ jobs:
           python-version: '3.11.4'  
 
       - name: FileTransfer
-        run: File_Transfer.py
+        run: D:\Python\OOPS\File_Transfer.py
 
