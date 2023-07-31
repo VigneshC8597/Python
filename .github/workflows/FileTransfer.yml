@@ -3,7 +3,7 @@ name: FileTransfer
 on:
   push:
     branches:
-      - File_transfer
+      - File_Transfer
   pull_request:
 
 jobs:
