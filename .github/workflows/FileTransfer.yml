@@ -1,4 +1,4 @@
-name: FileTransfer
+name: File_Transfer
 
 on:
   push:
