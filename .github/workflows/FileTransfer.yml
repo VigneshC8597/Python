@@ -1,15 +1,15 @@
-name: File_Transfer
+name: FileTransfer
 
 on:
   push:
     branches:
-      - File_Transfer
+      - my_project
   pull_request:
    branches:
-       -File_Transfer
+       -my_project
 jobs:
   run_code:
-    runs-on: ubuntu-latest  
+    runs-on: window-latest  
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
