@@ -9,7 +9,7 @@ on:
        -my_project
 jobs:
   run_code:
-    runs-on: window-latest  
+    runs-on: ubuntu-latest  
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
