@@ -5,7 +5,6 @@ on:
     branches:
       - my_project
 jobs:
-    run_code:  File_Transfer.py
     runs-on: ubuntu-latest  
     strategy:
       matrix:
@@ -18,9 +17,11 @@ jobs:
           python-version: ${{ matrix.python-version }}
        - name: Install dependencies
          run: |
-          python -m pip install --upgrade pip
-          pip install ruff pytest
-          if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
-
- 
+               python -m pip install --upgrade pip
+               pip install ruff pytest
+               if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+       - name: Lint with ruff
+         run: |
+              ruff --format=github --select=E9,F63,F7,F82 --target-version=py37
+              ruff --format=github --target-version=py37 .  
 
